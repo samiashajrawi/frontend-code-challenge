@@ -15,7 +15,7 @@ const Evolutions = (props) => {
     const cardsArray = props.evolutions.map(pokemon => {
         const favoriteClass= 'fa fa-heart fa-lg float-right ' + (pokemon.isFavorite && 'text-danger' || 'text-secondary');
         return (
-        <Col key={pokemon.name} md={3} sm={2} className="pr-0 pb-2" >
+        <Col key={pokemon.name} md={3} sm={2} className="col-content pr-0 pb-2" >
             <Card className="pokemon-card">
                 <Link to={`/${pokemon.name}`}>  
                     <CardImg src={pokemon.image || ''} alt={pokemon.name ||  ''}  className="img-thumbnail img-fluid" /> 
@@ -39,7 +39,7 @@ const Evolutions = (props) => {
                 <h3>Evolutions</h3>
                 </Col>
             </Row>
-            <Row>
+            <Row className="row-content">
                 {cardsArray}
             </Row>
         </Container>

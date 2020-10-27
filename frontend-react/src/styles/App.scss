@@ -95,9 +95,13 @@ $selected-blue-color: #17a2b8;
 .row-content {
   margin-right: -5px;
   margin-left: -5px;
+  .col-content {
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+}
 
-
-  .pokemon-card {
+.pokemon-card {
     background-color: $background-color;
     border: 1px solid $border-color;
     color: $text-color;
@@ -112,12 +116,16 @@ $selected-blue-color: #17a2b8;
         text-decoration: none;
       }
     }
+    
+  
+  .card-body {
+    .row {
+      margin-left: 0;
+      margin-right: 0;
+    }
     .table-view {
       border: 1px solid $border-color;
     }
   }
-  .col-content{
-    padding-right: 5px;
-    padding-left: 5px;
-  }
 }
+  
