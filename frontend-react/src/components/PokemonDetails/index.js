@@ -96,7 +96,7 @@ const PokemonDetails = (props) => {
                                 <Col sm={11}>      
                                 <ProgressBar now={100} className="mt-1 pg-purple" />
                                 </Col>
-                                <Col sm={1}>
+                                <Col sm={1} className="p-0">
                                     <p>CP: {props.pokemon.maxCP}</p>
                                 </Col>
                             </Row>  
@@ -104,7 +104,7 @@ const PokemonDetails = (props) => {
                                 <Col sm={11}>      
                                 <ProgressBar variant="info" now={100} className="mt-1" />
                                 </Col>
-                                <Col sm={1}>
+                                <Col sm={1} className="p-0" >
                                     <p>HP: {props.pokemon.maxHP}</p>
                                 </Col>
                             </Row>
